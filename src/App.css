@@ -1,0 +1,193 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#root, .App, .login_main {
+  height: 100%;
+}
+
+.login_main {
+  background-color: #002060;
+}
+.login_container {
+  background-color: #fff;
+  width: 90%;
+  margin-top: 4%;
+  display: inline-flex;
+  padding-top: 10%;
+}
+.slider {
+  width: 60%;
+  margin-left: 10%;
+}
+.login {
+  width: 40%;
+  margin-right: 2%;
+}
+.national-logo-login[_ngcontent-nry-c188] {
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  width: 70px;
+}
+.welcome-logo[_ngcontent-nry-c188] {
+  margin-left: -490px;
+  margin-top: -200px;
+  margin-bottom: 5px;
+  width: 200px;
+}
+.style {
+  margin-right: 50%;
+}
+.center {
+  margin: 0% 5%;
+  width: 90%;
+  padding-bottom: 35px;
+  padding-top: 30px;
+  background-color: #fff;
+}
+.head {
+  height: 100px;
+  position: relative;
+  width: 90%;
+  left: 5%;
+  background: white;
+}
+
+.logo_1 {
+  float: left;
+  margin-left: 30px;
+}
+.logo_3 {
+  margin-top: 10px;
+}
+.logo_2 {
+  float: right;
+  margin-right: 30px;
+  margin-top: 12px;
+}
+.logo_2 span {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: system-ui;
+}
+.home_container {
+  height: auto;
+  min-height: 550px;
+  position: relative;
+  background: white;
+  width: 90%;
+  left: 5%;
+}
+.logo_2 .ant-btn, .logo_2 .ant-btn-default {
+  border: none !important;
+}
+.logo_2 .ant-btn-icon-only {
+  margin: 16px 0px;
+}
+.logo_2 .ant-dropdown-trigger {
+  top: -24px;
+}
+
+.home_container .ant-card-head-title {
+  float: left !important;
+  display: flex !important;
+}
+
+.tab_container .ant-tabs-nav {
+  margin-left: 5% !important;
+  background: #dddfe0;
+  width: 90%;
+}
+.tab_container .ant-tabs-content-holder {
+  margin-top: -16px;
+}
+.tab_container .ant-tabs-nav-wrap {
+  margin-left: 12px;
+}
+
+.home_container .item_tittle .ant-list-item-meta-title, 
+.home_container .item_tittle .ant-list-item-meta-content {
+  width: 800px;
+  text-align: start;
+  font-weight: 400;
+}
+.home_container .item_value,
+.home_container .item_value .ant-list-item-meta-title, 
+.home_container .item_value .ant-list-item-meta-content, 
+.home_container .item_value .ant-list-item-meta {
+  width: 40px !important;
+  text-align: start;
+  color: #4ba0b8;
+  font-weight: bold;
+}
+
+.home_container .item_details,
+.home_container .item_details .ant-list-item-meta-title, 
+.home_container .item_details .ant-list-item-meta-content, 
+.home_container .item_details .ant-list-item-meta {
+  width: 400px !important;
+  text-align: start;
+  color: #61dafb;
+}
+
+.charts {
+  width: 100%;
+  display: inline-flex;
+  height: 300px !important;
+}
+.pie {
+  margin-left: 200px;
+}
+.ring {
+  float:left;
+  margin-left: 200px;
+  margin-top: 15px;
+}
+.home_container .display {
+  display: block;
+  width: 100%;
+}
+.home_container .cardTitle {
+  width: 10%;
+  float: left;
+}
+.home_container .edit {
+  float: right !important;
+}
