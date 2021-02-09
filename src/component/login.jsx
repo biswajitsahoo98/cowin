@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Form, Input, Button, Checkbox, Carousel, Tag } from 'antd';
+import { Form, Input, Button, Checkbox, Carousel, Tag, Row, Col } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { TwitterOutlined, YoutubeOutlined, FacebookOutlined, LinkedinOutlined} from '@ant-design/icons';
 import { Spin, Space }  from 'antd';
@@ -29,32 +29,40 @@ export class Login extends Component {
             <div className="login_main">
                 <div className="login_div">
                     <div className="login_container">
-                        <div className="slider">
-                            <div className="style">
-                                <img _ngcontent-nry-c188="" src="img/national-emblem-login.svg" alt="logo" class="national-logo-login"></img>
-                                <img _ngcontent-nry-c188="" src="img/cowin.png" alt="logo" class="welcome-logo"></img>
-                                <Carousel autoplay >
-                                    <div>
-                                        <p _ngcontent-roj-c188="">Together we will fight COVID-19.</p>
-                                        <img src="/img/covid.jpg" width="450" height="400" style={contentStyle} />
-                                    </div>
-                                    <div>
-                                        <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</p>
-                                        <img src="/img/covid19.jpg" width="400" height="400" style={contentStyle} />
-                                    </div>
-                                    <div>
-                                        <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus.</p>
-                                        <img src="/img/cowin19.jpg" width="400" height="400" style={contentStyle} />
-                                    </div>
-                                    <div>
-                                        <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</p>
-                                        <img src="/img/covin.jpg" width="400" height="400" style={contentStyle} />
-                                    </div>
-                                </Carousel>
-                            </div>
+                        <div>
+                            <Row gutter={16}>
+                                <Col className="gutter-row" span={12}>
+                                    <div><a href="/home"><img className="logo_1" src="img/cowin.png" alt="logomain" width="150"></img></a></div>
+                                </Col>
+                                <Col className="gutter-row" span={12}>
+                                    <div><img className="logo_3" src="img/national-emblem-login.svg" alt="logo" width="40"></img></div>
+                                </Col>
+                            </Row>
                         </div>
-
-                        <div className="login">
+                        <div className="login_container_box">
+                            <div className="slider">
+                                <div className="style">
+                                    <Carousel autoplay >
+                                        <div>
+                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19.</p>
+                                            <img src="/img/covid.jpg" width="100%" height="100%"  />
+                                        </div>
+                                        <div>
+                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</p>
+                                            <img src="/img/covid19.jpg" width="100%" height="100%"  />
+                                        </div>
+                                        <div>
+                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus.</p>
+                                            <img src="/img/cowin19.jpg" width="100%" height="100%"  />
+                                        </div>
+                                        <div>
+                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</p>
+                                            <img src="/img/covin.jpg" width="100%" height="100%"  />
+                                        </div>
+                                    </Carousel>
+                                </div>
+                            </div>
+                            <div className="login">
                             <Form
                                 name="normal_login"
                                 className="login-form"
@@ -126,7 +134,9 @@ export class Login extends Component {
                                     LinkedIn
                             </Tag>
                             </div>
+                            
                         </div>
+
                     </div>
                     <div className="center">
                         <div _ngcontent-roj-c172="" class="row py-2">
@@ -148,6 +158,8 @@ export class Login extends Component {
                             </div>
                         </div>
                     </div>
+                </div>
+                    
                 </div>
             </div>
         );

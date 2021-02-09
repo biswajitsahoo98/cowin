@@ -48,8 +48,10 @@
   background-color: #fff;
   width: 90%;
   margin-top: 4%;
-  display: inline-flex;
-  padding-top: 10%;
+  display: inline-block;
+}
+.login_container_box {
+  display: flex;
 }
 .slider {
   width: 60%;
@@ -91,10 +93,23 @@
 
 .logo_1 {
   float: left;
-  margin-left: 30px;
+}
+.vertical-center {
+  right: 1%;
+  transform: translateY(33%) translateX(0%);
+}
+.head .ant-dropdown-button {
+  float: right;
+}
+.head .ant-dropdown-button .ant-avatar-image {
+  margin-top: -6px;
+}
+.head .ant-dropdown-button .ant-btn-default {
+  border: none !important;
 }
 .logo_3 {
   margin-top: 10px;
+  max-width: 30%;
 }
 .logo_2 {
   float: right;
@@ -190,4 +205,15 @@
 }
 .home_container .edit {
   float: right !important;
+}
+
+.login_container .logo_3 {
+  float: right;
+  margin-right: 3%;
+}
+
+.login_container_box .slider .style {
+  width: 60%;
+  height: 60%;
+  position: relative;
 }

@@ -12,16 +12,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-           <Route path="/login">
-            <Login />
+          <Route path="/home">
+            <LayoutTab />
           </Route>
 
-            <Route path="/">
-              <LayoutTab />
-            </Route>
-
+          <Route path="/">
+            <Login />
+          </Route>
         </Switch>
-    </BrowserRouter>
+      </BrowserRouter>
     </div>
   );
 }

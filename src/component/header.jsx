@@ -1,28 +1,39 @@
 import React, { Component } from "react";
-import { Avatar, Image, Button, Menu, Dropdown} from 'antd';
+import { Avatar, Image, Button, Menu, Dropdown, Row, Col} from 'antd';
 import { PoweroffOutlined } from '@ant-design/icons';
 
 export class Header extends Component {
 
+    logout = () => {
+        document.location.href = "/";
+    }
+
     render() {
         const menu = (
             <Menu >
-              <Button icon={<PoweroffOutlined />} > Logout</Button>
+              <Button icon={<PoweroffOutlined />} onClick={this.logout}> Logout</Button>
             </Menu>
           );
 
         return (
             <div>
                 <header className="head">
-                    <a href="/"><img className="logo_1" src="img/cowin.png" alt="logomain" width="150"></img></a>
-                    <img className="logo_3" src="img/national-emblem-login.svg" alt="logo" width="40"></img>
-                    <div className="logo_2">
-                    <Dropdown.Button overlay={menu} icon={<Avatar src={"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"} />}>
-                         Welcome, Amit
-                    </Dropdown.Button>
-                    </div>
+                    <Row gutter={16}>
+                        <Col className="gutter-row" span={8}>
+                            <div><a href="/home"><img className="logo_1" src="img/cowin.png" alt="logomain" width="150"></img></a></div>
+                        </Col>
+                        <Col className="gutter-row" span={8}>
+                            <div><img className="logo_3" src="img/national-emblem-login.svg" alt="logo" width="40"></img></div>
+                        </Col>
+                        <Col className="gutter-row vertical-center" span={8}>
+                            <div>
+                                <Dropdown.Button overlay={menu} icon={<Avatar src={"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"} />}>
+                                    Welcome, Amit
+                                </Dropdown.Button>
+                            </div>
+                        </Col>
+                    </Row>
                 </header>
-
             </div>
         );
     }
