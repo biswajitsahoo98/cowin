@@ -183,17 +183,14 @@
 }
 
 .charts {
-  width: 100%;
   display: inline-flex;
-  height: 300px !important;
+  width: 100% !important;
 }
 .pie {
-  margin-left: 200px;
+  width: 50% !important;
 }
 .ring {
-  float:left;
-  margin-left: 200px;
-  margin-top: 15px;
+  margin-left: 5% !important;
 }
 .home_container .display {
   display: block;

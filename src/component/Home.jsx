@@ -127,10 +127,10 @@ const data = [
   };
 
   const configRing = {
-    height: 250,
-    width: 250,
+    height: 200,
+    width: 200,
     autoFit: false,
-    percent: 0.6,
+    percent: 0.4,
     color: ['#F4664A', '#E8EDF3'],
     innerRadius: 0.85,
     radius: 0.98,
@@ -139,7 +139,7 @@ const data = [
         style: {
           color: '#363636',
           fontSize: '12px',
-          lineHeight: '14px',
+          lineHeight: '12px',
         },
         formatter: function formatter() {
           return 'Vaccinated';
