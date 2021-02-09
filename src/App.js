@@ -15,7 +15,6 @@ function App() {
            <Route path="/login">
             <Login />
           </Route>
-
             <Route path="/">
               <LayoutTab />
             </Route>

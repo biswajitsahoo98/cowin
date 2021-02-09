@@ -18,7 +18,7 @@ export class Header extends Component {
                     <img className="logo_3" src="img/national-emblem-login.svg" alt="logo" width="40"></img>
                     <div className="logo_2">
                     <Dropdown.Button overlay={menu} icon={<Avatar src={"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"} />}>
-                         Welcome, Amit
+                         Welcome, suman
                     </Dropdown.Button>
                     </div>
                 </header>
