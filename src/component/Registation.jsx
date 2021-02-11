@@ -50,7 +50,7 @@ export class Registation extends Component {
             loading: [],
             patient: [],
             medical_hist: {
-                1 : {
+                1: {
                     patientKey: {
                         sequence: 1,
                         aadhar: ''
@@ -59,7 +59,7 @@ export class Registation extends Component {
                     value: '',
                     details: '',
                 },
-                2 : {
+                2: {
                     patientKey: {
                         sequence: 2,
                         aadhar: ''
@@ -68,7 +68,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                3 : {
+                3: {
                     patientKey: {
                         sequence: 3,
                         aadhar: ''
@@ -77,7 +77,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                4 : {
+                4: {
                     patientKey: {
                         sequence: 4,
                         aadhar: ''
@@ -86,7 +86,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                5 : {
+                5: {
                     patientKey: {
                         sequence: 5,
                         aadhar: ''
@@ -95,7 +95,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                6 : {
+                6: {
                     patientKey: {
                         sequence: 6,
                         aadhar: ''
@@ -104,7 +104,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                7 : {
+                7: {
                     patientKey: {
                         sequence: 7,
                         aadhar: ''
@@ -113,7 +113,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                8 : {
+                8: {
                     patientKey: {
                         sequence: 8,
                         aadhar: ''
@@ -122,7 +122,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                9 : {
+                9: {
                     patientKey: {
                         sequence: 9,
                         aadhar: ''
@@ -131,7 +131,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                10 : {
+                10: {
                     patientKey: {
                         sequence: 10,
                         aadhar: ''
@@ -140,7 +140,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                11 : {
+                11: {
                     patientKey: {
                         sequence: 11,
                         aadhar: ''
@@ -149,7 +149,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                12 : {
+                12: {
                     patientKey: {
                         sequence: 12,
                         aadhar: ''
@@ -158,7 +158,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                13 : {
+                13: {
                     patientKey: {
                         sequence: 13,
                         aadhar: ''
@@ -167,7 +167,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                14 : {
+                14: {
                     patientKey: {
                         sequence: 14,
                         aadhar: ''
@@ -176,7 +176,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                15 : {
+                15: {
                     patientKey: {
                         sequence: 15,
                         aadhar: ''
@@ -185,7 +185,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                16 : {
+                16: {
                     patientKey: {
                         sequence: 16,
                         aadhar: ''
@@ -194,7 +194,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                17 : {
+                17: {
                     patientKey: {
                         sequence: 17,
                         aadhar: ''
@@ -203,7 +203,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                18 : {
+                18: {
                     patientKey: {
                         sequence: 18,
                         aadhar: ''
@@ -212,7 +212,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                19 : {
+                19: {
                     patientKey: {
                         sequence: 19,
                         aadhar: ''
@@ -221,7 +221,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                20 : {
+                20: {
                     patientKey: {
                         sequence: 20,
                         aadhar: ''
@@ -230,7 +230,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                21 : {
+                21: {
                     patientKey: {
                         sequence: 21,
                         aadhar: ''
@@ -239,7 +239,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                22 : {
+                22: {
                     patientKey: {
                         sequence: 22,
                         aadhar: ''
@@ -248,7 +248,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                23 : {
+                23: {
                     patientKey: {
                         sequence: 23,
                         aadhar: ''
@@ -257,7 +257,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                24 : {
+                24: {
                     patientKey: {
                         sequence: 24,
                         aadhar: ''
@@ -266,7 +266,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                25 : {
+                25: {
                     patientKey: {
                         sequence: 25,
                         aadhar: ''
@@ -275,7 +275,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                26 : {
+                26: {
                     patientKey: {
                         sequence: 26,
                         aadhar: ''
@@ -284,7 +284,7 @@ export class Registation extends Component {
                     value: '',
                     details: ''
                 },
-                27 : {
+                27: {
                     patientKey: {
                         sequence: 27,
                         aadhar: ''
@@ -301,14 +301,14 @@ export class Registation extends Component {
         data.dob = data.dob.format('YYYY-MM-DD')
         let history = [];
         let aadhar = data.aadhar;
-        Object.keys(this.state.medical_hist).map( k=>{
+        Object.keys(this.state.medical_hist).map(k => {
             let item = this.state.medical_hist[k];
             item.patientKey['aadhar'] = aadhar;
             history.push(item);
         });
         data['history'] = history
         console.log(data);
-        fetch('http://localhost:9090/patient/save', {
+        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/patient/save', {
             method: 'post',
             headers: {
                 'Accept': 'application/form-data',
@@ -316,13 +316,13 @@ export class Registation extends Component {
             },
             body: JSON.stringify(data),
         }).then((responce) => {
-                if (responce.status === 200) {
-                    message.success('Data Saved Successfully');
-                    this.formRef.current.resetFields();
-                } else {
-                    message.error('Data Saving Failed');
-                }
+            if (responce.status === 200) {
+                message.success('Data Saved Successfully');
+                this.formRef.current.resetFields();
+            } else {
+                message.error('Data Saving Failed');
             }
+        }
         );
     };
 
@@ -343,17 +343,17 @@ export class Registation extends Component {
 
     medicalHistory = (k, type) => event => {
         let history = this.state.medical_hist;
-        if(type === 'answer'){
+        if (type === 'answer') {
             history[k].value = event.target.value;
-        }else{
+        } else {
             history[k].details = event.target.value;
         }
-        this.setState({medical_hist:history});
+        this.setState({ medical_hist: history });
     };
 
-    componentDidMount(){
+    componentDidMount() {
         console.log(this.props.patientData);
-        if(this.props.patientData){
+        if (this.props.patientData) {
             this.formRef.current.setFieldsValue({
                 name: this.props.patientData.name,
                 aadhar: this.props.patientData.aadhar,
@@ -370,12 +370,16 @@ export class Registation extends Component {
                 insurance_no: this.props.patientData.insurance_no,
                 insurance_pro: this.props.patientData.insurance_pro,
                 marital: this.props.patientData.marital,
-              });
-              let history = this.state.medical_hist;
-              this.props.patientData.history.map((item, i)=>{
-                history[i+1]=item;
-              });
-              this.setState({medical_hist: history});
+                vaccine_batch_no: this.props.patientData.vaccine_batch_no,
+                vaccine_type: this.props.patientData.vaccine_type,
+                // dose_1: this.props.patientData.dose_1,
+                // dose_2: this.props.patientData.dose_2
+            });
+            let history = this.state.medical_hist;
+            this.props.patientData.history.map((item, i) => {
+                history[i + 1] = item;
+            });
+            this.setState({ medical_hist: history });
         }
     }
 
@@ -390,7 +394,7 @@ export class Registation extends Component {
             ],
         };
 
-        
+
         return (
 
             <div className="home_container"><br></br>
@@ -480,6 +484,50 @@ export class Registation extends Component {
                         </Row>
                     </Card>
 
+
+                    {this.props.patientData ? 
+                        <Card title="Vaccine Details" bordered={true}>
+                        <Row gutter={24}>
+                        <Col span={10}>
+                            <Form.Item name="vaccine_type" label="Vaccine Type:" rules={[{ required: true }]}>
+                                    <Select
+                                    showSearch
+                                    style={{ width: 200 }}
+                                    placeholder="Vaccine Type"
+                                    optionFilterProp="children"
+                                    onChange={onChange}
+                                    onFocus={onFocus}
+                                    onBlur={onBlur}
+                                    onSearch={onSearch}
+                                    filterOption={(input, option) =>
+                                        option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+                                    }
+                                >
+                                    <Option value="Covaxin">Covaxin</Option>
+                                    <Option value="Covishield">Covishield</Option>
+                                </Select>
+                            </Form.Item>
+                        </Col>
+                        <Col span={10} >
+                                <Form.Item name="vaccine_batch_no" label="Vaccine Batch No:" rules={[{ required: true }]}>
+                                    <Input placeholder="Vaccine Batch No"  style={{ width: 200 }} />
+                                </Form.Item>
+                            </Col>
+
+                            <Col span={10} >
+                                <Form.Item name="dose_1" label="Dose 1:" rules={[{ required: true }]}>
+                                    <DatePicker />
+                                </Form.Item>
+                            </Col>
+                            <Col span={10} >
+                                <Form.Item name="dose_2" label="Dose 2:" rules={[{ required: true }]}>
+                                    <DatePicker />
+                                </Form.Item>
+                            </Col>
+                        </Row>
+                    </Card>
+                    : ""}
+
                     <Card title="2. Patient Address and Contact Information" bordered={true}>
                         <Row gutter={24}>
                             <Col span={10} >
@@ -555,7 +603,7 @@ export class Registation extends Component {
                                     itemLayout="horizontal"
                                     dataSource={Object.keys(this.state.medical_hist)}
                                     renderItem={(k, i) => (
-                                        <List.Item 
+                                        <List.Item
                                             actions={[
                                                 <Radio.Group value={this.state.medical_hist[k].value} name="radiogroup" onChange={this.medicalHistory(k, 'answer')}>
                                                     <Radio value='yes'>Yes</Radio>

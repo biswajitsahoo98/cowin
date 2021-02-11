@@ -5,6 +5,7 @@ import { PoweroffOutlined } from '@ant-design/icons';
 export class Header extends Component {
 
     logout = () => {
+        sessionStorage.clear();
         document.location.href = "/";
     }
 
@@ -28,7 +29,7 @@ export class Header extends Component {
                         <Col className="gutter-row vertical-center" span={8}>
                             <div>
                                 <Dropdown.Button overlay={menu} icon={<Avatar src={"https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"} />}>
-                                    Welcome, Amit
+                                    Welcome, {sessionStorage.getItem("name")}
                                 </Dropdown.Button>
                             </div>
                         </Col>

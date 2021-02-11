@@ -26,7 +26,7 @@ export class PatientSearch extends Component {
 
     onSearch = value => {
         console.log(value);
-        fetch('http://localhost:9090/patient/find/'+value).then(res => res.json()).then((data) => {
+        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/patient/find/'+value).then(res => res.json()).then((data) => {
             console.log(data);
             this.setState({ 
                 patientData: data,
@@ -66,6 +66,11 @@ export class PatientSearch extends Component {
                             <Descriptions.Item label="Blood Group">{this.state.patientData.blood_group}</Descriptions.Item>
                             <Descriptions.Item label="Date of birth">{this.state.patientData.dob}</Descriptions.Item>
                             <Descriptions.Item label="Gender">{this.state.patientData.gender}</Descriptions.Item>
+
+                            <Descriptions.Item label="Vaccine Type">{this.state.patientData.vaccine_type}</Descriptions.Item>
+                            <Descriptions.Item label="Vaccine Batch No">{this.state.patientData.vaccine_batch_no}</Descriptions.Item>
+                            <Descriptions.Item label="Dose 1">{this.state.patientData.dose_1}</Descriptions.Item>
+                            <Descriptions.Item label="Dose 2">{this.state.patientData.dose_2}</Descriptions.Item>
                         </Descriptions>
                         <List
                             itemLayout="horizontal"

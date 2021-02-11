@@ -12,8 +12,15 @@ export class LayoutTab extends Component {
         }
     }
 
+    componentWillMount(){
+        if(!sessionStorage.getItem("name")){
+            document.location.href = "/";    
+        }
+    }
+
     render() {
         return (
+            sessionStorage.getItem("name") ? 
             <Layout>
                 <Layout>
                     <Header />
@@ -27,6 +34,7 @@ export class LayoutTab extends Component {
                     <Footer />
                 </Layout>
             </Layout>
+            : ""
         );
     }
 

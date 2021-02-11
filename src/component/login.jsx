@@ -2,18 +2,38 @@ import React, { Component } from "react";
 import { Form, Input, Button, Checkbox, Carousel, Tag, Row, Col } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import { TwitterOutlined, YoutubeOutlined, FacebookOutlined, LinkedinOutlined} from '@ant-design/icons';
-import { Spin, Space }  from 'antd';
+import { Spin, Space, message }  from 'antd';
 
 export class Login extends Component {
-
+    formRef = React.createRef();
     constructor(props) {
         super(props);
         this.state = {
 
         }
     }
-    onFinish = (values) => {
-        window.location="/home";
+    onFinish = (data) => {
+        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/user/validate', {
+            method: 'post',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+        }).then(responce => responce.json()).then((data) => {
+            console.log(data);
+            if (data) {
+                sessionStorage.setItem("name",data.name);
+                sessionStorage.setItem("user_type",data.user_type);
+                this.formRef.current.resetFields();
+                window.location="/home";
+            }
+        }
+        ).catch((error) => {
+            debugger;
+            message.error('Invalid UserId or Password');
+            return false;
+        });
     };
 
     render() {
@@ -64,6 +84,7 @@ export class Login extends Component {
                             </div>
                             <div className="login">
                             <Form
+                                ref={this.formRef}
                                 name="normal_login"
                                 className="login-form"
                                 initialValues={{
@@ -72,7 +93,7 @@ export class Login extends Component {
                                 onFinish={this.onFinish}
                             >
                                 <Form.Item
-                                    name="username"
+                                    name="user_id"
                                     label="User Name:"
                                     rules={[
                                         {
