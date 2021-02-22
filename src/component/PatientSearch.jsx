@@ -26,7 +26,7 @@ export class PatientSearch extends Component {
 
     onSearch = value => {
         console.log(value);
-        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/patient/find/'+value).then(res => res.json()).then((data) => {
+        fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/patient/find/'+value).then(res => res.json()).then((data) => {
             console.log(data);
             this.setState({ 
                 patientData: data,

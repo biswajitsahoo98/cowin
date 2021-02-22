@@ -13,7 +13,7 @@ export class Login extends Component {
         }
     }
     onFinish = (data) => {
-        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/user/validate', {
+        fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/user/validate', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',

@@ -308,7 +308,7 @@ export class Registation extends Component {
         });
         data['history'] = history
         console.log(data);
-        fetch('http://cowinapp-env.eba-ug2uddjb.us-east-2.elasticbeanstalk.com/patient/save', {
+        fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/patient/save', {
             method: 'post',
             headers: {
                 'Accept': 'application/form-data',
