@@ -13,7 +13,7 @@ export class Login extends Component {
         }
     }
     onFinish = (data) => {
-        fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/user/validate', {
+        fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/user/validate', {
             method: 'post',
             headers: {
                 'Accept': 'application/json',

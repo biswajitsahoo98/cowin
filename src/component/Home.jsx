@@ -166,7 +166,7 @@ export class Home extends Component {
     }
     componentDidMount() {
 
-    fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/patient/getAll').then(res => res.json()).then((data) => {
+    fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/patient/getAll').then(res => res.json()).then((data) => {
           console.log(data);
           this.setState({ patient: data })
         });
@@ -175,7 +175,7 @@ export class Home extends Component {
 
     showDetails = (value, event) => {
         console.log(value);
-        fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/patient/find/'+value).then(res => res.json()).then((data) => {
+        fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/patient/find/'+value).then(res => res.json()).then((data) => {
           console.log(data);
           this.setState({ patientData: data, visible: true });
         });
@@ -184,7 +184,7 @@ export class Home extends Component {
     delete = (value, event) => {
         console.log(value);
         if(value.aadhar){
-            fetch('http://cowin-env.eba-v23mtfpm.us-east-2.elasticbeanstalk.com/patient/delete/'+value.aadhar).then(res => res.json()).then((data) => {
+            fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/patient/delete/'+value.aadhar).then(res => res.json()).then((data) => {
                 console.log(data);
                 this.setState({ patient: data })
               });
