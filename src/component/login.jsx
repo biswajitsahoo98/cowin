@@ -22,15 +22,17 @@ export class Login extends Component {
             body: JSON.stringify(data),
         }).then(responce => responce.json()).then((data) => {
             console.log(data);
-            if (data) {
+            if (data.name) {
                 sessionStorage.setItem("name",data.name);
                 sessionStorage.setItem("user_type",data.user_type);
                 this.formRef.current.resetFields();
                 window.location="/home";
-            }
+            }else{
+				message.error('Invalid UserId or Password');
+				return false;
+			}
         }
         ).catch((error) => {
-            debugger;
             message.error('Invalid UserId or Password');
             return false;
         });
