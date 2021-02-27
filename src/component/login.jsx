@@ -64,19 +64,19 @@ export class Login extends Component {
                                 <div className="style">
                                     <Carousel autoplay >
                                         <div>
-                                            <h1 _ngcontent-roj-c188="">Together we will fight COVID-19.</h1>
+                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19</p>
                                             <img src="/img/covid.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <h1 _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</h1>
+                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone</p>
                                             <img src="/img/covid19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <h1 _ngcontent-roj-c188="">Humanity needs leadership for covid.</h1>
+                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the Corona</p>
                                             <img src="/img/cowin19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <h1 _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</h1>
+                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic</p>
                                             <img src="/img/covin.jpg" width="100%" height="100%"  />
                                         </div>
                                     </Carousel>
