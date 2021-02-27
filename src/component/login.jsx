@@ -13,25 +13,27 @@ export class Login extends Component {
         }
     }
     onFinish = (data) => {
-        fetch('http://localhost:5000/user/validate', {
+        fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/user/validate', {
             method: 'post',
             headers: {
-                'Accept': 'application/json', 
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
         }).then(responce => responce.json()).then((data) => {
             console.log(data);
-            if (data) {
+            if (data.name) {
                 sessionStorage.setItem("name",data.name);
                 sessionStorage.setItem("user_type",data.user_type);
                 this.formRef.current.resetFields();
                 window.location="/home";
-            }
+            }else{
+				message.error('Invalid UserId or Password');
+				return false;
+			}
         }
         ).catch((error) => {
-            debugger;
-            message.error('Invalid User ID or Password');
+            message.error('Invalid UserId or Password');
             return false;
         });
     };
@@ -64,19 +66,19 @@ export class Login extends Component {
                                 <div className="style">
                                     <Carousel autoplay >
                                         <div>
-                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19</p>
+                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19.</p>
                                             <img src="/img/covid.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone</p>
+                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</p>
                                             <img src="/img/covid19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the Corona</p>
+                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus.</p>
                                             <img src="/img/cowin19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic</p>
+                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</p>
                                             <img src="/img/covin.jpg" width="100%" height="100%"  />
                                         </div>
                                     </Carousel>
@@ -140,7 +142,7 @@ export class Login extends Component {
                             <div>
                                 <Space size="middle">
                                     <Spin size="large" />
-                                </Space>
+                                </Space>,
                             <br /><br /><br />
                                 <Tag icon={<TwitterOutlined />} color="#55acee">
                                     Twitter
