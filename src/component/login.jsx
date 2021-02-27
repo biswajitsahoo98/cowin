@@ -13,27 +13,25 @@ export class Login extends Component {
         }
     }
     onFinish = (data) => {
-        fetch('https://cors-everywhere-me.herokuapp.com/cowin-env-1.eba-eg2emyiq.us-east-2.elasticbeanstalk.com/user/validate', {
+        fetch('http://localhost:5000/user/validate', {
             method: 'post',
             headers: {
-                'Accept': 'application/json',
+                'Accept': 'application/json', 
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(data),
         }).then(responce => responce.json()).then((data) => {
             console.log(data);
-            if (data.name) {
+            if (data) {
                 sessionStorage.setItem("name",data.name);
                 sessionStorage.setItem("user_type",data.user_type);
                 this.formRef.current.resetFields();
                 window.location="/home";
-            }else{
-				message.error('Invalid UserId or Password');
-				return false;
-			}
+            }
         }
         ).catch((error) => {
-            message.error('Invalid UserId or Password');
+            debugger;
+            message.error('Invalid User ID or Password');
             return false;
         });
     };
@@ -66,19 +64,19 @@ export class Login extends Component {
                                 <div className="style">
                                     <Carousel autoplay >
                                         <div>
-                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19.</p>
+                                            <h1 _ngcontent-roj-c188="">Together we will fight COVID-19.</h1>
                                             <img src="/img/covid.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</p>
+                                            <h1 _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</h1>
                                             <img src="/img/covid19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus.</p>
+                                            <h1 _ngcontent-roj-c188="">Humanity needs leadership for covid.</h1>
                                             <img src="/img/cowin19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</p>
+                                            <h1 _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</h1>
                                             <img src="/img/covin.jpg" width="100%" height="100%"  />
                                         </div>
                                     </Carousel>
