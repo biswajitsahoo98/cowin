@@ -140,7 +140,7 @@ export class Login extends Component {
                             <div>
                                 <Space size="middle">
                                     <Spin size="large" />
-                                </Space>,
+                                </Space>
                             <br /><br /><br />
                                 <Tag icon={<TwitterOutlined />} color="#55acee">
                                     Twitter
