@@ -33,7 +33,7 @@ export class Login extends Component {
 			}
         }
         ).catch((error) => {
-            message.error('Invalid UserId or Password');
+            message.error('Invalid User ID or Password');
             return false;
         });
     };
@@ -66,19 +66,19 @@ export class Login extends Component {
                                 <div className="style">
                                     <Carousel autoplay >
                                         <div>
-                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19.</p>
+                                            <p _ngcontent-roj-c188="">Together we will fight COVID-19</p>
                                             <img src="/img/covid.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone.</p>
+                                            <p _ngcontent-roj-c188="">There is enough of everything, everyday for everyone</p>
                                             <img src="/img/covid19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus.</p>
+                                            <p _ngcontent-roj-c188="">Humanity needs leadership and solidarity to defeat the coronavirus</p>
                                             <img src="/img/cowin19.jpg" width="100%" height="100%"  />
                                         </div>
                                         <div>
-                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic.</p>
+                                            <p _ngcontent-roj-c188="">The guidelines of winning over the pandemic</p>
                                             <img src="/img/covin.jpg" width="100%" height="100%"  />
                                         </div>
                                     </Carousel>
@@ -142,7 +142,7 @@ export class Login extends Component {
                             <div>
                                 <Space size="middle">
                                     <Spin size="large" />
-                                </Space>,
+                                </Space>
                             <br /><br /><br />
                                 <Tag icon={<TwitterOutlined />} color="#55acee">
                                     Twitter
